@@ -1,0 +1,12 @@
+.App {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.main {
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  width: 100%;
+}

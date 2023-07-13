@@ -1,0 +1,49 @@
+@import "./css/bootstrap.css";
+@font-face {
+
+	font-family: 'Montserrat'; 
+
+	src: "./fonts/Montserrat/Montserrat-VariableFont_wght.ttf"; 
+}
+.Auth_Parrent{
+    display: flex;
+    /*height: 1000px;*/
+    font-family: 'Montserrat';
+}
+.Auth_Child {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border:solid 1px rgba(101, 136, 108, 1) !important;
+    border-radius: 10px;
+    
+    width: 400px;
+    height: 250px;    
+}
+.authH1 {    
+    margin: auto;
+    color: rgba(101, 136, 108, 1) ;   
+}
+.authInputs{
+    display: flex;
+    height: 85px;
+    flex-direction: column;
+}
+.authInput{
+    width: 250px;
+    height: 35px;
+    margin: auto;
+    border:solid 1px rgba(101, 136, 108, 1) !important;
+    border-radius: 5px;   
+}
+.authButton{
+    width: 150px;
+    height: 40px;
+    margin: auto;
+    text-align: center;
+    border: none;
+    background-color: rgba(101, 136, 108, 1);
+    color: white;
+    border-radius: 10px;   
+}
