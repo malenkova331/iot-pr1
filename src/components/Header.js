@@ -20,7 +20,11 @@ const Header = ({props,isLoggedIn, setIsLoggedIn, userName}) => {
                         Выход
                     </Link>
                 </nav>
-                : <h3 className="welcome">Добро пожаловать</h3>
+                : <nav className="nav"><h3 className="welcome">Добро пожаловать</h3>
+                    <Link className="navl" exact to="/login">
+                        Вход
+                    </Link></nav>
+                
             }
         </header> 
         

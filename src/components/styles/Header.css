@@ -4,6 +4,15 @@
 
 	src: "./fonts/Montserrat/Montserrat-VariableFont_wght.ttf"; 
 }
+
+@font-face {
+
+	font-family: 'Rubik'; 
+    font-weight: normal;
+	src: "./fonts/Rubik"; 
+
+}
+
 @import "./css/bootstrap.css";
 .Header {
     height: 60px;
@@ -13,6 +22,7 @@
     align-items: center;
     background-color: rgba(101, 136, 108, 1);
     margin-bottom: 100px;
+    font-family: 'Courier New', Courier, monospace;
 
 }
 
@@ -36,6 +46,9 @@
 }
 .welcome {
     padding-bottom: 10px;
+    padding-left: 20px;
     color: white;
     margin: auto;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: lighter !important;
 }

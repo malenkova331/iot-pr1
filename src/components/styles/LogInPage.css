@@ -8,7 +8,7 @@
 .Auth_Parrent{
     display: flex;
     /*height: 1000px;*/
-    font-family: 'Montserrat';
+    font-family: 'Courier New', Courier, monospace;
 }
 .Auth_Child {
     margin: auto;
@@ -45,5 +45,6 @@
     border: none;
     background-color: rgba(101, 136, 108, 1);
     color: white;
-    border-radius: 10px;   
+    border-radius: 10px;
+    font-size: 20px; 
 }
