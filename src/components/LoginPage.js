@@ -19,7 +19,7 @@ const LoginPage = (props,setIsLoggedIn,history,setUserName) => {
     e.preventDefault();
     props.setUserName(login);
     props.setIsLoggedIn(true);
-    props.history.push('/');
+    props.history.push('/mainpage');
   }
 
 
