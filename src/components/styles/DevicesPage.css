@@ -1,0 +1,151 @@
+.devices {
+    display: flex;
+    padding-top: 60px;
+
+    height: 100%;
+}
+
+.rightAlign {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.deviceBox {
+    display: flex;
+    flex-direction: column;
+
+    width: 90%;
+
+    height: fit-content;
+
+    margin-top: 20px;
+    padding: 15px;
+
+    border-radius: 30px;
+    
+    background-color: aliceblue;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.activeDeviceBox {
+    border: 5px solid #65886c;
+}
+
+.deviceBox > * {
+    margin: 0;
+}
+
+.deviceBox > h1 {
+    font-weight: 700;
+    font-size: larger;
+}
+
+.deviceBox:last-child {
+    margin-bottom: 20px;
+}
+
+.deviceNumber {
+    font-weight: 200;
+}
+
+.addDevice {
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+
+    font-size: 7rem;
+
+    color: #386347;
+}
+
+.buttonE {
+    background-color: #7ba284;
+    
+    padding: 5px;
+    margin-right: 15px;
+    border-radius: 10px;
+
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+.buttonD {
+    background-color: #da5959;
+
+    padding: 5px;
+    border-radius: 10px;
+
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+.devicesMenu {
+    overflow: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: #aeccd2;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+
+    width: 25%;
+
+    border-right: 1px solid #386347;
+}
+
+.devicesMenu::-webkit-scrollbar {
+    width: 10px;
+    background-color: #93b3ac;
+}
+
+.devicesMenu::-webkit-scrollbar-thumb {
+    background-color: #65886c;
+
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
+    border-radius: 10px;
+}
+
+
+.devicesRight {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    padding: 20px;
+}
+
+.rightBox {
+    background-color: #acc3ba;
+    border-radius: 10px;
+    
+    margin: 10px;
+    padding: 10px;
+}
+
+.rightBox > h1 {
+    font-weight: 700;
+    font-size: larger;
+}
+
+.map {
+    background-image: url("../../img/map.jpg");
+}
+
+.table {
+    background-image: url("../../img/table.png");
+}
+
+.graph {
+    background-image: url("../../img/graph.jpg");
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+}
+
+.roww {
+    display: flex;
+    flex-wrap: nowrap;
+}
