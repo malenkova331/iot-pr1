@@ -12,8 +12,11 @@
     flex-direction: column;
     align-items: center;
     background-color: rgba(101, 136, 108, 1);
-    margin-bottom: 100px;
 
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+
+    position: fixed;
+    z-index: 0;
 }
 
 .nav{
@@ -38,4 +41,12 @@
     padding-bottom: 10px;
     color: white;
     margin: auto;
+}
+
+.logo {
+    width: 50px;
+
+    display: flex;
+    align-self: center;
+    margin-left: 10px;
 }

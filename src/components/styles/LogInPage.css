@@ -9,6 +9,8 @@
     display: flex;
     /*height: 1000px;*/
     font-family: 'Montserrat';
+
+    padding-top: 160px;
 }
 .Auth_Child {
     margin: auto;

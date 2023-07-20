@@ -1,9 +1,9 @@
 import { useState } from 'react'
 import './styles/LogInPage.css'
 
-const LoginPage = (props,setIsLoggedIn,history,setUserName) => {
+const LoginPage = (props) => {
 
-  console.log(props)
+  //console.log(props)
   
   const [login, setLogin] = useState('');
   const [password, setPassword] = useState('');

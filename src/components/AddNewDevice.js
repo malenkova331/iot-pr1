@@ -3,21 +3,21 @@ import CloseIcon from '@mui/icons-material/Close';
 import { Component } from 'react';
 
 export class AddNewDevice extends Component {
-    state ={
+    state = {
         blockName: '',
         blockComment: ''
     }
     //управление блоками
-    handleBlockNameChange = e =>{
-    this.setState({
-        blockName: e.target.value
-    })
+    handleBlockNameChange = e => {
+        this.setState({
+            blockName: e.target.value
+        })
     }
 
-    handleBlockCommentChange = e =>{
-    this.setState({
-        blockComment: e.target.value
-    })
+    handleBlockCommentChange = e => {
+        this.setState({
+            blockComment: e.target.value
+        })
     }
     //создание блока устройств
     createBlock = () => {
@@ -34,43 +34,45 @@ export class AddNewDevice extends Component {
     handleEscape = (e) => {
         if (e.key === 'Escape') {
             this.props.handleHideAddDevice()
-        }}
-    
+        }
+    }
+
     componentDidMount() {
         window.addEventListener('keyup', this.handleEscape)
-        }
-    
+    }
+
     componentWillUnmount() {
         window.removeEventListener('keyup', this.handleEscape)
-        }
+    }
 
     //форма
-    render(){
-    const handleHideAddDevice = this.props.handleHideAddDevice
-    return(
-        <>
-        <form action="" className="addDevice">
-                <div>
-                <button onClick={handleHideAddDevice} tipe="button"><CloseIcon /></button>
-                </div> 
-                <div className="title">Новое устройство</div>
-                <div>
-                    <input tipe="text" 
-                           name="title"
-                           value={this.state.blockName} 
-                           onChange={this.handleBlockNameChange}/>
+    render() {
+        const handleHideAddDevice = this.props.handleHideAddDevice
+        return (
+            // Окно появляется поверх содержимого страницы
+            <div id="overlay">
+                <div id="modal">
+                    <h2>Новое устройство</h2>
+                    {/* Форма для добавления */}
+                    <form>
+                        <input placeholder='Название устройства:' tipe="text"
+                            name="title"
+                            value={this.state.blockName}
+                            onChange={this.handleBlockNameChange} />
+
+                        <textarea placeholder='Описание:' name="comment"
+                            value={this.state.blockComment}
+                            onChange={this.handleBlockCommentChange} />
+
+                        {/* Кнопка подтверждения */}
+                        <button onClick={this.createBlock} type="button">Добавить устройство</button>
+                    </form>
+
+                    {/* Кнопка закрыть */}
+                    <button className='closeButton' onClick={handleHideAddDevice}><CloseIcon /></button>
                 </div>
-                <div>
-                    <textarea name="comment"
-                              value={this.state.blockComment}
-                              onChange={this.handleBlockCommentChange}/>
-                </div>
-                <div>
-                    <button onClick={this.createBlock} tipe="button">Добавить устройство</button>
-                </div> 
-            </form> 
-            <div className="overlay"></div>
-        </>
-    )
-}}
-export default AddNewDevice
+            </div>
+        )
+    }
+}
+export default AddNewDevice;
